@@ -84,7 +84,7 @@ $app->get('/borrar', function() use ($app){
      $valores=array(
  		"id"=>$app->request()->get('id')
  	);
- 	$sql = "delete from publicaciones WHERE ID=:id";
+ 	$sql = "delete from tema WHERE ID=:id";
  	$pdo = $app->db;
  	$q   = $pdo->prepare($sql);
  	$q->execute($valores);
